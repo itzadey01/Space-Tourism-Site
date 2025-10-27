@@ -12,6 +12,13 @@ const router = createRouter({
     { path: '/crew', name: 'Crew', component: CrewView },
     { path: '/technology', name: 'Technology', component: TechnologyView },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0 }
+    }
+  }
 })
 
 export default router

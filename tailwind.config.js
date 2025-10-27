@@ -2,9 +2,15 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}", // Add your component folders if needed
+    "./src/**/*.{vue,js,ts,jsx,tsx}", 
   ],
   theme: {
+    breakpoints: {
+        'mobile': '375px',    // Mobile
+        'md': '768px',    // Tablet
+        'lg': '1024px',   // Desktop
+        'xl': '1280px',   // Large desktop
+      },
     extend: {
       colors: {
         dark: "hsl(230, 35%, 7%)",
